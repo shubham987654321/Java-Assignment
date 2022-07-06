@@ -1,0 +1,45 @@
+Constructor
+----------------
+When a derived class is extended from  base class then first of Base class
+constructor will be called after that derived class constructor
+will be called.
+
+if we want to execute constructor with argument then we have to use
+super() keyword
+super() ==> it is reference variable to refer immediate parent class
+           Object.
+this() ==> Current Instance of Class
+
+
+The Object of Super Class  can reference to subClass but vice-versa
+is not true.
+Super obj = new Sub() =  allowed vice-versa is not true ( this is run time polymorphism)
+
+================================
+
+
+
+
+
+
+
+ Abstraction
+ =============
+
+
+
+
+
+
+
+ Interface
+ ========
+ In Interface all method will be abstract but in Abstract class only one abstract method can
+ make class Abstract.
+
+-->Group of Related methods with empty bodies.
+--> When we implement inheritance we use extends keyword
+     but when we using interface we have to use "implements" keywords
+--> When we implement method of Interface then we have to make public to that method.
+--> when we  want to use more than one class then use of interface is arrise.
+--> we cannot modify  properties of Interface they are final
