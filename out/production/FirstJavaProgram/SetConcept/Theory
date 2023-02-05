@@ -1,0 +1,3 @@
+How we convet a set to array
+array_name is array where value will be comes in the form of array of set
+set.toArray(array_name);
