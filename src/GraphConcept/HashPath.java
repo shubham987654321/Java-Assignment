@@ -32,8 +32,8 @@ public class HashPath {
 
         gp.printGraph();
         // Check is Path is Persent b.w. two vertex or not
-        Boolean isPath  = gp.hasPath("A","A", new HashMap<>());
-        System.out.println("Path is Present "+isPath);
+//       Boolean isPath  = gp.hasPath("A","B", new HashMap<>());
+//        System.out.println("Path is Present "+isPath);
 
     }
 

@@ -49,7 +49,7 @@ public class BFSConcept {
           gp.addEdge("0","3",2);
            gp.addEdge("2","4",2);
         gp.printGraph();
-        gp.BFS("0");
+//        gp.BFS("0");
     }
 
 }

@@ -10,6 +10,7 @@ public class Array {
         arrList.add(10);
         arrList.add(20);
         System.out.println(arrList.size());
+
 */
         System.out.println("Enter number of rows and Columns");
         int n;
