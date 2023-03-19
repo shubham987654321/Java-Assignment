@@ -13,15 +13,26 @@ are the sets.
 
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 class LexSort {
+    static  ArrayList<String> slist  = new ArrayList<>();
+      static ArrayList<String> powerSetLex(String s, int i, String curr) {
+
+        slist.add(curr);
+        for (int j = i; j < s.length(); j++) {
+            powerSetLex(s, j + 1, curr + s.charAt(j));
+        }
+        return slist;
+
+    }
     //Function to return the lexicographically sorted power-set of the string.
-//    static ArrayList<String> powerSet(String s)
-//    {
-//        // add your code here
-//
-//
-//    }
+    static ArrayList<String> powerSet(String s)
+    {
+        // add your code here
+        return powerSetLex(s, 0, "");
+
+    }
     static void powerSet(String s, int i, String curr, ArrayList<String> lstr) {
         if (i >= s.length()) {
             lstr.add(curr);
@@ -34,11 +45,22 @@ class LexSort {
 
     }
 
+
+
+
 }
 
 public class PowerSet {
     public static void main(String[] args) {
-        String str = "abc";
-//        LexSort.powerSet(str,0,"",);
+        String str = "acb";
+//      LexSort.powerSet(str,0,"",new ArrayList<>());
+      ArrayList<String> slist = LexSort.powerSet(str);
+      Collections.sort(slist);
+      for(String s : slist){
+          System.out.print(s +" ");
+      }
+
+
+
     }
 }

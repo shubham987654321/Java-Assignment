@@ -23,6 +23,22 @@ Super obj = new Sub() =  allowed vice-versa is not true ( this is run time polym
 
 
 
+
+
+
+
+
+Non-Static Function ====================
+--> We can't use this keyword in static function
+--> We can't use non-static data-member in static function
+--> we can't use non-static function in static function.
+
+
+
+
+
+
+
  Abstraction
  =============
 
@@ -43,3 +59,13 @@ Super obj = new Sub() =  allowed vice-versa is not true ( this is run time polym
 --> When we implement method of Interface then we have to make public to that method.
 --> when we  want to use more than one class then use of interface is arrise.
 --> we cannot modify  properties of Interface they are final
+
+
+
+
+
+
+
+
+
+

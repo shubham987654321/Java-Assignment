@@ -32,6 +32,8 @@ public class BasicSingleton {
         System.out.println(s.getX());
         s.setX(34);
         System.out.println(s.getX());
+                Singleton s2 =  Singleton.getInstance();
+
 
 
 

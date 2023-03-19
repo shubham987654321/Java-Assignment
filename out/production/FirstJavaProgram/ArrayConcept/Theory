@@ -1,6 +1,12 @@
-
+-----------------------------------------------
 Convert Array to String directly
 int arr[] = new int[]{2,4,5,6};
 Arrays.toString(arr)
 
 Arrays.deepToString() --> for Nested array
+
+-------------------------------------------------
+ArrayList<String> arrlist  = new ArrayList<>();
+ Collection.sort(arrlist) // sort the arrayList
+
+ ---------------------------------------

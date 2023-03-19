@@ -57,8 +57,8 @@ public class CoinChange1 {
 
     public static void main(String[] args) {
 
-        int coins[] = {1,3,4,5,2};
-        int amount = 5;
+        int coins[] = {18,1,10};
+        int amount = 20;
         coinChangWithoutDuplicate(coins,amount,"",0);
         System.out.printf("-------------------\n");
         coinChangWithDuplicate(coins,amount,"",0);
