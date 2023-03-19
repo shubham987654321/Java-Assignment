@@ -9,4 +9,26 @@ Arrays.deepToString() --> for Nested array
 ArrayList<String> arrlist  = new ArrayList<>();
  Collection.sort(arrlist) // sort the arrayList
 
- ---------------------------------------
+
+ Arrays.sort() for Array
+
+
+
+
+ --------------------------------------- Sorting Concept
+
+ int [] arr
+       : for this bydefault 0
+ Integer[] arr
+       : for this by default null
+
+
+Arrays.sort(int[] arr)
+  {Quick Sort} : Dual Pivot sort
+  Wrost case O(n*2)
+  Average case O(nlogn)
+
+
+Arrays.sort(Integer[] arr)
+  Use Tim Sort
+     {Merge Sort O(nlogn) Stable  and Insertion Sort}
