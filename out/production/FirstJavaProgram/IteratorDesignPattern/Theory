@@ -1,0 +1,44 @@
+Iterator Design pattern :
+  This is used for looping across all items of a collection of data  ,
+  without changing the collection.
+
+  implemented via two interface.
+    1. Iterator
+    2. Iterable
+    3. Syntactical  Sugar  (foreach loop)
+
+    if we want to use for each loop in custom list of object then
+    we have to implement Iterable interface and we have to override
+    the Iterator() method and it will return Iterable Data type.
+
+     e.g. Custom  Linked List will be implement Iterable from this we can use for loop
+     and Custom  LinkedList  class will override the Iterator function which is returning
+     Iterator  so now we have to create a class LinkedListIterator which also implements
+     Iterator but this class will return Iterator.
+
+     --> first class implements Iterable (for use of "for loop" )
+     public class MyLinkedList<T> implements Iterable<T>{}
+        --> Inner class implements Iterator (it contains)
+             @Override
+            public Iterator<T> iterator() {
+                return new LinkedListIterator(head);
+            }
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        Iterator class contains two function
+          class LinkedListIterator implements  Iterator<T>{}
+
+        --> next();
+         public T next(){
+            T rv= (T) temp.data;
+            temp = temp.next;
+            return  rv;
+        }
+        public boolean hasNext(){
+            if(temp!=null){
+                return  true;
+            }else{
+                return  false;
+            }
+
+        }
+        --> boolena hasNext() : is next value is present?
