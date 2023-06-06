@@ -42,6 +42,7 @@ public class MyLinkedList<T> implements Iterable<T>{
 
         }
 
+
        public T next(){
             T rv= (T) temp.data;
             temp = temp.next;
